@@ -1,44 +1,50 @@
-# Material UI - Next.js example in TypeScript
+# Note Taking App
 
-## How to use
+This is a web application built with Node.js, React, and TypeScript, using the Next.js framework. It allows users to write and add notes to a database, which then displays in a list format.
 
-Download the example [or clone the repo](https://github.com/mui/material-ui):
+## Prerequisites
 
-<!-- #default-branch-switch -->
+Before you begin, ensure you have met the following requirements:
 
-```sh
-curl https://codeload.github.com/mui/material-ui/tar.gz/master | tar -xz --strip=2  material-ui-master/examples/material-next-ts
-cd material-next-ts
-```
+- You have installed Node.js and npm.
+- You have a basic understanding of JavaScript, TypeScript, and React.
 
-Install it and run:
+## Installing Note Taking App
 
-```sh
-npm install
-npm run dev
-```
+To install the project, follow these steps:
 
-or:
+1. Clone the repository:
 
-<!-- #default-branch-switch -->
+   ```bash
+   git clone https://github.com/RomanBromidge/NoteTakingApp.git
+   ```
 
-[![Edit on StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/mui/material-ui/tree/master/examples/material-next-ts)
+2. Navigate to the project directory:
 
-[![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/mui/material-ui/tree/master/examples/material-next-ts)
+   ```bash
+   cd note-taking-project
+   ```
 
-## The idea behind the example
+3. Install dependencies:
 
-The project uses [Next.js](https://github.com/vercel/next.js), which is a framework for server-rendered React apps.
-It includes `@mui/material` and its peer dependencies, including [Emotion](https://emotion.sh/docs/introduction), the default style engine in Material UI v5. If you prefer, you can [use styled-components instead](https://mui.com/material-ui/guides/interoperability/#styled-components).
+   ```bash
+   npm install
+   ```
 
-## The link component
+## Running Note Taking App
 
-The [example folder](https://github.com/mui/material-ui/tree/HEAD/examples/material-next-ts) provides an adapter for the use of [Next.js's Link component](https://nextjs.org/docs/api-reference/next/link) with MUI.
-More information [in the documentation](https://mui.com/material-ui/guides/routing/#next-js).
+To run the project, follow these steps:
 
-## What's next?
+1. Start the development server:
 
-<!-- #default-branch-switch -->
+   ```bash
+   npm run dev
+   ```
 
-You now have a working example project.
-You can head back to the documentation and continue by browsing the [templates](https://mui.com/material-ui/getting-started/templates/) section.
+2. Open your web browser and visit `http://localhost:3000`.
+
+## Using Note Taking App
+
+1. Once the project is running, you will see an input field and an "Add Note" button.
+2. Enter your note in the input field. Please note that only alphanumeric characters, some punctuation e.g. .,!?', and up to 180 characters are permitted.
+3. Click the "Add Note" button to add your note. If the note is validated, it will be added to a list displayed below the input field.
